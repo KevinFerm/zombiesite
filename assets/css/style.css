@@ -10,10 +10,30 @@
  */
 body {
     line-height: 1.7em;
-    color: #7f8c8d;
+    color: #000;
     font-size: 13px;
 }
-
+.stylish {
+    display:block;
+    width:100px;
+    height:100px;
+    border-radius:66px;
+    border:4px double #ccc;
+    font-size:32px;
+    color:#666;
+    line-height:100px;
+    text-align:center;
+    text-decoration:none;
+    text-shadow:0 1px 0 #fff;
+    background:#ddd;
+    margin:0 auto;
+    }
+.stylish:hover {
+        border:4px double #bbb;
+        color:#aaa;
+        text-decoration:none;
+        background:#e6e6e6
+    }
 h1,
 h2,
 h3,
@@ -224,7 +244,7 @@ a.pure-button-primary {
 /* This is the class used for the dark-background areas. */
 .ribbon {
     /*background: #2d3e50;*/
-    color: #aaa;
+    color: #212121;
 }
 
 /* This is the class used for the footer */
