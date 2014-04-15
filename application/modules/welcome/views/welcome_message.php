@@ -1,7 +1,7 @@
 
     <div class="step1 ribbon l-box-lrg pure-g-r">
         <div class="l-box-lrg is-center pure-u-1-5 ">
-            <p>Step 1 p</p>
+            <a href="#" class="stylish">1</a>
         </div>
         <div class="pure-u-3-5 ">
 
@@ -18,7 +18,7 @@
 
     <div class="step2 ribbon l-box-lrg pure-g-r">
         <div class="l-box-lrg is-center pure-u-1-5 ">
-            <p>Step 2 p</p>
+            <a href="#" class="stylish">2</a>
         </div>
         <div class="pure-u-3-5 ">
 
@@ -35,7 +35,7 @@
 
     <div class="step3 ribbon l-box-lrg pure-g-r">
         <div class="l-box-lrg is-center pure-u-1-5 ">
-            <p>Step 3 p</p>
+            <a href="#" class="stylish">3</a>
         </div>
         <div class="pure-u-3-5 ">
 
@@ -52,7 +52,7 @@
 
     <div class="step4 ribbon l-box-lrg pure-g-r">
         <div class="l-box-lrg is-center pure-u-1-5 ">
-            <p>Step 4 p</p>
+            <a href="#" class="stylish">4</a>
         </div>
         <div class="pure-u-3-5 ">
 
