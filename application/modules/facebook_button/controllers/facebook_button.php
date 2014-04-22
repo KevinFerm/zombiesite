@@ -34,10 +34,15 @@ class Facebook_Button extends MX_Controller {
             $data['login_url'] = $this->facebook
                 ->getLoginUrl(array ( 
                 'display' => 'popup',
+                'scope' => 'manage_friendlists,email,user_location',
                 'redirect_uri' => 'http://42foo.com/zombiesite/index.php'
                 ));
         }
 
         $this->load->view('facebook_button',$data);
+        if(isset($_GET['action']) && $_GET['action'] === 'logout'){
+            $this->facebook->destroySession();
+            header("Location: http://42foo.com/zombiesite");
+        }
     }
 }
