@@ -1,13 +1,12 @@
 <?php 
 
-/*
-<a href="<?= $logout_url ?>">Logout</a>
-*/
+
 
 if (@$user_profile): ?>
-<pre>
-    <?php echo $user_profile['name']; ?>
-</pre>
+
+	<li><a href="?action=logout">Logout</a></li>
+    <?php echo "<li>".$user_profile['name']."</li>"; ?>
+
 <?php else: ?>
     <a href="<?= $login_url ?>"><img src="<?= base_url().'assets/img/fblogin2.png' ?>" alt="Connect with Facebook"></a>
 <?php endif; ?>
