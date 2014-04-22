@@ -17,6 +17,11 @@ body {
     visibility: hidden;
     display: none;
 }
+
+.hidden {
+        visibility: hidden;
+    display: none;
+}
 .stylish {
     display:block;
     width:100px;

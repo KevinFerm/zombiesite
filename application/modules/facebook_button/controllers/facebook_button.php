@@ -18,15 +18,31 @@ class Facebook_Button extends MX_Controller {
         $this->load->library('facebook', $fb_config);
 
         $user = $this->facebook->getUser();
+        if ($user) {
+            try {
+                $data['user_profile'] = $this->facebook
+                    ->api('/me','GET');
+            } catch (FacebookApiException $e) {
+                $user = null;
+            }
+        }
 
         if ($user) {
             $data['logout_url'] = $this->facebook
                 ->getLogoutUrl();
         } else {
             $data['login_url'] = $this->facebook
-                ->getLoginUrl();
+                ->getLoginUrl(array ( 
+                'display' => 'popup',
+                'scope' => 'manage_friendlists,email,user_location',
+                'redirect_uri' => 'http://42foo.com/zombiesite/index.php'
+                ));
         }
 
         $this->load->view('facebook_button',$data);
+        if(isset($_GET['action']) && $_GET['action'] === 'logout'){
+            $this->facebook->destroySession();
+            header("Location: http://42foo.com/zombiesite");
+        }
     }
 }

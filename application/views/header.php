@@ -15,9 +15,7 @@
         <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal ">
             <a class="pure-menu-heading" href="">Zombiesite master</a>
             <ul>
-                <li><?php echo Modules::run('facebook_button/facebook_button/index'); ?></li>
-                <li><a href="#">Zombie Planner</a></li>
-                <li>Facebook login placehold</li>
+                <?php echo Modules::run('facebook_button/facebook_button/index'); ?>
                 <li><a href="#plannerlink" class="plannerlink">Zombie Planner</a></li>
             </ul>
         </div>
