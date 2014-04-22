@@ -13,6 +13,10 @@ body {
     color: #000;
     font-size: 13px;
 }
+.planner {
+    visibility: hidden;
+    display: none;
+}
 .stylish {
     display:block;
     width:100px;
