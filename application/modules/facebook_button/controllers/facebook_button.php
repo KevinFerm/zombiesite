@@ -1,6 +1,6 @@
 <?php
 
-class Facebook extends MX_Controller {
+class Facebook_Button extends MX_Controller {
 
     function __construct()
     {
@@ -9,6 +9,11 @@ class Facebook extends MX_Controller {
 
     function index()
     {
+
+        $fb_config = array(
+            'appId'  => '241088286075556',
+            'secret' => 'e9045f6502ce93890009103dadaf91b1'
+        );
 
         $this->load->library('facebook', $fb_config);
 

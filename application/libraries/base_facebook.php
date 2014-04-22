@@ -13,11 +13,12 @@
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations
  * under the License.
+ * Some Edits by Dennis Magnusson
  */
 
-if (!function_exists('curl_init')) {
+/*if (!function_exists('curl_init')) {
   throw new Exception('Facebook needs the CURL PHP extension.');
-}
+}*/
 if (!function_exists('json_decode')) {
   throw new Exception('Facebook needs the JSON PHP extension.');
 }
