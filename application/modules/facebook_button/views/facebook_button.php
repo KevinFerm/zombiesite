@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 
 
@@ -8,5 +8,5 @@ if (@$user_profile): ?>
     <?php echo "<li>".$user_profile['name']."</li>"; ?>
 
 <?php else: ?>
-    <a href="<?= $login_url ?>"><img src="<?= base_url().'assets/img/fblogin2.png' ?>" alt="Connect with Facebook"></a>
+    <li><a href="<?= $login_url ?>"><img src="<?= base_url().'assets/img/fblogin2.png' ?>" alt="Connect with Facebook"></a></li>
 <?php endif; ?>
