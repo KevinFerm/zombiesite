@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css">
-    <script src="code.jquery.com/jquery-latest.min.js"type="text/javascript"></script>
+
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
     <script src="<?php echo base_url();?>assets/js/site.js" type="text/javascript"></script>
 </head>
 <body>
