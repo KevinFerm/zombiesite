@@ -6,12 +6,12 @@ class Tutorial extends MX_controller {
 	} 
 
 	function index()
-	{
-		
+	{		
 		$this->load->view('header');
-		$this->load->view('tutorial');
+		$this->load->model('Tutorial_Model');
+		$data['tabel'] = $this->Tutorial_Model->getTutorial();
+		$this->load->view('tutorial',$data);
 	}
-
 }
 
  ?>
