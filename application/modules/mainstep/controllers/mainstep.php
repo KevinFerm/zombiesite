@@ -20,7 +20,6 @@ class Mainstep extends MX_Controller {
                 $user = null;
             }
         }
-        $this->load->view('header');
         $this->load->view('mainstep', $data);
     }
 }
