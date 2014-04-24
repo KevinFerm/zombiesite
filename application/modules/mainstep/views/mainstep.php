@@ -4,15 +4,15 @@
         </div>
         <div class="pure-u-3-5 ">
 
-            <h2 class="content-head content-head-ribbon"><?php echo $mainstep[0][0]['title']?></h2>
+            <h2 class="content-head content-head-ribbon"><?php echo $mainstep[0][0]['title']; ?></h2>
 
-            <p><?php echo $mainstep[0][0]['desc']?></p>
+            <p><?php echo $mainstep[0][0]['desc']; ?></p>
             <?php if(@$user_profile): ?>
                 <?php foreach($substep[1] as $x): ?>
                 <ul>
-                <li><a href="#ministeps" class="ministeps" id="ministeps_<?php echo $x['id']?>"><?php echo $x['title']; ?></a></li>
+                <li><a href="#ministeps" class="ministeps" id="ministeps_<?php echo $x['id']; ?>"><?php echo $x['title']; ?></a></li>
                 </ul>
-                <div id="ministep_<?php echo $x['id']?>" style="display:none;"><?php echo $x['text']; ?></div>
+                <div id="ministep_<?php echo $x['id']; ?>" style="display:none;"><?php #echo $x['text']; ?></div>
                 <?php endforeach; ?>
                 <?php endif; ?>
         </div>
@@ -26,13 +26,13 @@
 
             <h2 class="content-head content-head-ribbon"><?php echo $mainstep[1][0]['title']?></h2>
 
-            <p><?php echo $mainstep[1][0]['desc']?></p>
+            <p><?php echo $mainstep[1][0]['desc']; ?></p>
                 <?php if(@$user_profile): ?>
                 <?php foreach($substep[2] as $x): ?>
                 <ul>
-                <li><a href="#ministeps" class="ministeps" id="ministeps_<?php echo $x['id']?>"><?php echo $x['title']; ?></a></li>
+                <li><a href="#ministeps" class="ministeps" id="ministeps_<?php echo $x['id']; ?>"><?php echo $x['title']; ?></a></li>
                 </ul>
-                <div id="ministep_<?php echo $x['id']?>" style="display:none;"><?php echo $x['text']; ?></div>
+                <div id="ministep_<?php echo $x['id']; ?>" style="display:none;"><?php #echo $x['text']; ?></div>
                 <?php endforeach; ?>
                 <?php endif; ?>
 
@@ -47,13 +47,13 @@
 
             <h2 class="content-head content-head-ribbon"><?php echo $mainstep[2][0]['title']?></h2>
 
-            <p><?php echo $mainstep[2][0]['desc']?></p>
+            <p><?php echo $mainstep[2][0]['desc']; ?></p>
                 <?php if(@$user_profile): ?>
                 <?php foreach($substep[3] as $x): ?>
                 <ul>
-                <li><a href="#ministeps" class="ministeps" id="ministeps_<?php echo $x['id']?>"><?php echo $x['title']; ?></a></li>
+                <li><a href="#ministeps" class="ministeps" id="ministeps_<?php echo $x['id']; ?>"><?php echo $x['title']; ?></a></li>
                 </ul>
-                <div id="ministep_<?php echo $x['id']?>" style="display:none;"><?php echo $x['text']; ?></div>
+                <div id="ministep_<?php echo $x['id']; ?>" style="display:none;"><?php #echo $x['text']; ?></div>
                 <?php endforeach; ?>
                 <?php endif; ?>
         </div>
@@ -73,7 +73,7 @@
                 <ul>
                 <li><a href="#ministeps" class="ministeps" id="ministeps_<?php echo $x['id']?>"><?php echo $x['title']; ?></a></li>
                 </ul>
-                <div id="ministep_<?php echo $x['id']?>" style="display:none;"><?php echo $x['text']; ?></div>
+                <div id="ministep_<?php echo $x['id']?>" style="display:none;"><?php #echo $x['text']; ?></div>
                 <?php endforeach; ?>
                 <?php endif; ?>
         </div>

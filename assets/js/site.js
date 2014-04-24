@@ -1,5 +1,12 @@
 $(document).ready(function(){
     $(".toggle").slideToggle();
+                $.ajax({
+                   type: "POST",
+                   url: "index.php/mainstep/ajaxSteps/ajax",
+                   // success: function(response){
+                   //            $("#steps").html(response);
+                   //          }
+           });
     $(".button").click(function(){
         var x = $(this).attr("id").substr(7,100);
         $("#toggle_"+x).slideToggle();
@@ -10,6 +17,9 @@ $(document).ready(function(){
     $(".ministeps").click(function(){
         var x = $(this).attr("id").substr(10,100);
         $("#ministep_"+x).slideToggle();
+                $.get("index.php/mainstep/getStepsText/"+x, function (msg) {
+                $("#ministep_"+x).html(msg);
+        });
     });
     $(".plannerlink").click(function(){
         $(".planner").slideToggle();

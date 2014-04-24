@@ -18,4 +18,12 @@ class Mainstep_model extends CI_Model {
         return $this->db->query("SELECT * FROM substep WHERE user_email='{$email}' AND step_num='{$step}'")->result_array();
     }
 
+    public function getSubStepText($id) {
+        $step = $this->db->query("SELECT * FROM substep WHERE id = '{$id}'")->result_array();
+        foreach($step as $x){
+            $text = $x['text'];
+            return $text;
+        }
+    }
+
 }
