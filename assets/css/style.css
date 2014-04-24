@@ -13,6 +13,10 @@ body {
     color: #000;
     font-size: 13px;
 }
+.ui-loader {
+        visibility: hidden;
+    display: none;
+}
 .planner {
     visibility: hidden;
     display: none;
