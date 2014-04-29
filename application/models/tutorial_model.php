@@ -9,8 +9,8 @@ class Tutorial_Model extends CI_Model {
     	return $this->db->query("SELECT * FROM tutorial WHERE child='0'")->result_array();
     }
 
-    function getSlide($id,$num){
-    	return $this->db->query("SELECT * FROM tutorial WHERE child='{$id}' AND slidenum='{$num}'")->result_array();
+    function getSlide($id){
+    	return $this->db->query("SELECT * FROM tutorial WHERE child='{$id}'")->result_array();
     }
 
     function addTutorial($title,$text)

@@ -325,3 +325,12 @@ a.pure-button-primary {
         font-size: 300%;
     }
 }
+
+.swipe {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.swipe_button{
+    background: rgb(28, 184, 65);
+}
