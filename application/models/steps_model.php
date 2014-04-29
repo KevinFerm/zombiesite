@@ -18,10 +18,21 @@ class Steps_model extends CI_Model {
 
     }
 
-    function insert_into_db(){
-		$this->load->database();
-		$this->db->insert("Steps", $data);
-
+    function insert_into_step($title, $text, $email, $id, $step){
+		$this->db->query("INSERT INTO `substep` (
+                        `id` ,
+                        `title` ,
+                        `text` ,
+                        `date` ,
+                        `group_id` ,
+                        `user_email` ,
+                        `mainstep_id` ,
+                        `step_num`
+                        )
+                        VALUES (
+                        NULL ,  '{$title}',  '{$text}', 
+                        CURRENT_TIMESTAMP ,  '',  '{$email}',  '{$id}',  '{$step}'
+                        );");
     }
 
 

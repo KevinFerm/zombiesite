@@ -18,12 +18,11 @@ body {
     display: none;
 }
 .planner {
-    visibility: hidden;
     display: none;
 }
 
 .hidden {
-        visibility: hidden;
+
     display: none;
 }
 .stylish {

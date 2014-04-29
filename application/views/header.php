@@ -26,3 +26,18 @@
         </div>
        </div>
        <div class="content-wrapper">
+        <div class="planner l-box-lrg pure-g-r">
+            <div class="pure-u-1-5">
+                <form method="get" class="pure-form pure-form-stacked">
+                    <select name="slide">
+                        <option value="1">POST ZOMBIE APOCALYPSE</option>
+                        <option value="2">FIRST WEEK</option>
+                        <option value="3">FIRST MONTH</option>
+                        <option value="4">FIRST YEAR</option>
+                    </select>
+                    <input type="text" name='title' value='Title'>
+                    <textarea rows="10" cols="30" name='text'>Enter your text!</textarea>
+                   <input type="submit" class="pure-button pure-button-primary" value="Add">
+                </form>
+            </div>
+        </div>
