@@ -13,6 +13,8 @@ application/models/steps_model.php - Joakim
 
 application/models/tutorial_model.php - Dennis M
 
+application/models/client.php - Dennis M
+
 
 Views:
 
