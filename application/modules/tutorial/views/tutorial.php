@@ -11,10 +11,27 @@ foreach ($tabel as $key) { ?>
             <?php echo $key['text']; ?>
         </p>
         <div class="toggle" id="toggle_<?php echo $index; ?>">
-            <div class="swipe" id="swipe_<?php echo $index; ?>" style="border-style:solid; border-width:5px;">
+
+            <?php if($device == "browser"){ ?>
+            <table>
+            <tr>
+            <td>
+            <button class="stylish" onclick="back(<?php echo $index ?>)"><</button>
+            </td>
+            <td>
+            <?php } ?>
+            <div class="swipe" id="swipe_<?php echo $index; ?>">
             </div>
+            <?php if($device == "browser"){ ?>
+            </td>
+            <td>
+            <button class="stylish" onclick="next(<?php echo $index ?>)">></button>
+            </td>
+            </tr>
+            </table>
+            <?php } ?>
         </div>
-        <button class="button" id="button_<?php echo $index; ?>">View More</button>
+        <button class="swipe_button pure-button button" id="button_<?php echo $index; ?>">View More</button>
     </div>
 </div>
 

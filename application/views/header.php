@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/style.css">
 
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <?php 
+    
+    if($device == "mobile"){ ?>
     <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <?php } ?>
     <script src="<?php echo base_url();?>assets/js/site.js" type="text/javascript"></script>
 </head>
 <body>

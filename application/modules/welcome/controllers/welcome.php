@@ -19,7 +19,9 @@ class Welcome extends MX_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('header');
+		$this->load->model('Client');
+		$data['device'] = $this->Client->device();
+		$this->load->view('header',$data);
 		$this->load->view('welcome_message');
 	}
 }

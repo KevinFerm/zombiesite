@@ -1,4 +1,8 @@
 <?php foreach($tabel as $key){
-	echo "<h2>Part 1 of 2: {$key['title']}</h2>";
-	echo $key['text'];
+	$slide = $key['slidenum'] + 1;
+	$max = count($tabel);
+	if($key['slidenum'] == $num){
+		echo "<h2>Part {$slide} of {$max}: {$key['title']}</h2>";
+		echo $key['text'];
+	}
 } ?>
